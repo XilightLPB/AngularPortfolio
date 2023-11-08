@@ -1,0 +1,121 @@
+<h1>Vous souhaitez me contacter:</h1>
+<p>Veuillez prendre en compte le fait que je consulte beaucoup plus régulièrement mon téléphone et mes mails que les réseaux sociaux</p>
+<p>Le formulaire est un cas à part, il est consulté très régulièrement, c'est donc LE moyen à privilégier en cas de demande urgente</p>
+<p>Si jamais vous m'appelez par téléphone et que je ne décroche pas merci également de me fournir un numéro de téléphone à rappeler</p>
+<div class="accordion" id="accordionFlushExample">
+  
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Via mail
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><p>Vous pouvez me contacter en envoyant un mail à:
+           "erwan.maigne.montamat@gmail.com"</p>
+        <a href="mailto:erwan.maigne.montamat@gmail.com?subject=Contact Via Portfolio pour" class="btn btn-primary">Ou bien en cliquant ici</a> </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          Par téléphone
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <p>Vous pouvez me contacter par téléphone au: (+33) 07 70 12 32 21</p>
+        <p>Envoyez moi de préference un SMS afin de convenir d'un rendez vous téléphonique avant d'appeler, sans quoi je ne pourrais garantir de vous répondre</p> 
+      </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Via formulaire
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+
+            <form (onSubmit)="getData()">
+                <div class="mb-3">
+                    <label for="Prenom" class="form-label">Prénom*</label>
+                    <input type="text" class="form-control" [formControl]="Fname" id="Prenom" required placeholder="Erwan" style="max-width: 730px" value="Erwan">
+                </div>
+
+                <div class="mb-3">
+                    <label for="Nom" class="form-label">Nom*</label>
+                    <input type="text" class="form-control" [formControl]="name" id="Nom" required placeholder="Maigne-Montamat" style="max-width: 730px" value="Maigne">
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Votre adresse mail*</label>
+                  <input type="email" class="form-control" [formControl]="mail" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemple@gmail.com" required style="max-width: 730px" value="erwan.maigne@gmail.com">
+                  <div class="form-text">Je ne la divulguerais pas, elle me servira juste à vous recontacter</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="TelNum" class="form-label">Numéro de téléphone</label>
+                  <input type="tel" class="form-control" id="TelNum" [formControl]="tel" placeholder="0770123221" style="max-width: 730px" value=" 0770123221">
+                </div>
+
+                <div class="mb-3">
+                    <label for="Objet" class="form-label">Titre de la demande*</label>
+                    <input type="text" class="form-control" id="Objet" [formControl]="title" required placeholder="Demande de site web pour ma moto" style="max-width: 730px" value="Titre">
+                </div>
+
+                <div class="mb-3">
+                    <label for="Content" class="form-label">Que dois-je savoir?*</label><br>
+                    <textarea class="" name="request" cols="80" rows="15" placeholder="Dites le moi, ici" [formControl]="formContent"required>Des trucs à savoir</textarea>
+                </div>
+
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">J'accepte que les données fournies soient gardées pour traiter ma demande</label>
+                </div>
+
+                <button id="submitButton" type="button" class="btn" (click)="getData()" [class.btn-primary]="!Success" [class.btn-success]="Success">Submit</button>
+              </form>
+            
+            
+        </div>
+      </div>
+    </div>
+
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Via les réseaux sociaux
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <h5>Voici la liste des réseaux sociaux sur lesquels vous pouvez me contacter</h5>
+            <ul>
+            <li>
+                <h6>LinkedIn</h6>
+                <p>J'y suis disponible sous le nom "Erwan Maigne-Montamat" ou en passant par le lien ci-dessous</p>
+                <a class="btn btn-primary" href="https://www.linkedin.com/in/erwan-maigne-montamat-16196a23a/" role="button">LinkedIn</a>
+                <br>
+            </li>
+            <br>
+            <li>
+                <h6>GitHub</h6>
+                <p>Après tout rien de tel pour vérifier la qualité d'un développeur que de regarder à quel point il pratique. <br>
+                J'y suis disponible sous le nom "Erwan Maigne-Montamat" ou "XilightLBP", ou grâce au bouton ci-dessous</p>
+                <a class="btn btn-primary" href="https://github.com/XilightLPB" role="button">GitHub</a>
+                <br>
+            </li>
+            </ul>
+        </div>
+        </div>
+
+        
+
+
+    </div>
+  </div>

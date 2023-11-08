@@ -1,0 +1,18 @@
+[{
+    "Name":"JobsHunter with bootstrap",
+    "RepoUrl": "https://github.com/XilightLPB/HNFormationHTMLBootStrapProject.github.io",
+    "RepoImage":"https://raw.githubusercontent.com/XilightLPB/HNFormationHTMLBootStrapProject.github.io/main/images/Logo.png",
+    "Description": "Un site fictionnel en HTML, CSS et bootstrap dans le cadre de la formation de développeur Angular Fullstack de HNformation, le sujet n'est malheureusement pas disponible puisqu'il s'aggisait d'une page web"
+},
+{
+    "Name":"JobsHunter",
+    "RepoUrl": "https://github.com/XilightLPB/HNFormationHTMLFirstProject.github.io",
+    "RepoImage":"https://raw.githubusercontent.com/XilightLPB/HNFormationHTMLBootStrapProject.github.io/main/images/Logo.png",
+    "Description": "Un site fictionnel d'une entreprise de coaching, afin d'atteindre vos objectifs professionels, TP réalisé dans le cadre de la formation de développeur Angular FullStack de HNFormation, le sujet n'est pas disponible"
+},
+{
+    "Name":"Sudoku Solver",
+    "RepoUrl": "https://github.com/XilightLPB/HNformationJStest",
+    "RepoImage":"non",
+    "Description": "Un petit solveur de sudoku en Javascript, réalisé dans le cadre de la formation HNFormation"
+}]

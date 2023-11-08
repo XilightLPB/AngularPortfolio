@@ -1,0 +1,17 @@
+<ul>My projects list
+
+    <div class="wrapContent">
+    <li *ngFor="let Projet of ProjetsList">
+        <div class="card" style="width: 30vw; margin-right: 10%; margin-left: 10%;">
+            <img src={{Projet.RepoImage}} class="Projet.RepoImage" alt="The illustration image of the project" width="500px" height="500px">
+            <div class="card-body">
+              <h3 class="card-title">{{Projet.Name}}</h3>
+              <p class="card-text" style="max-width: 550px; height:80px; overflow-y:scroll;">{{Projet.Description}}</p>
+              <a href={{Projet.RepoUrl}} class="btn btn-primary d-flex justify-content-center">Lien du projet</a>
+            </div>
+          </div>
+          
+    </li> 
+    </div>
+
+</ul>

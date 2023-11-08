@@ -1,0 +1,15 @@
+li{
+    list-style: none;
+
+}
+
+ul{
+    li{
+        min-height: max-content;
+    }
+}
+
+.wrapContent{
+    display: flex;
+    flex-wrap: wrap;
+}
